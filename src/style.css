@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #f4f4f4;
+}
+
+.h-fit{
+    width: fit-content;
+}
+
+#nav{
+    width : 100%;
+    height : 50px;
+    background-color : #f4f4f4;
+    justify-content : space-between;
+    text-align : center;
+}
+
+.navButton {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.navButton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #f4f4f4;
+  transition: 0.5s ease;
+}
+
+.navButton:hover {
+  color: #1e1e2b;
+  transition-delay: 0.3s;
+}
+
+.navButton:hover::before {
+  width: 100%;
+}
+
+.navButton::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #f4f4f4;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.navButton:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+
+
+
+.btn {
+  width: 200px;
+  height: 60px;
+  border: 5px solid transparent;
+  border-radius: 35px;
+  transition: all 0.8s;
+  cursor: pointer;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.btn:hover {
+  background: transparent;
+  color: white;
+  font-size: 1.3em;
+}
+
+#viewBtn {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  border: none;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#viewBtn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -4px;
+  top: -1px;
+  margin: auto;
+  width: 128px;
+  height: 48px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#viewBtn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+#viewBtn:hover::after {
+  filter: blur(30px);
+}
+
+#viewBtn:hover::before {
+  transform: rotate(-180deg);
+}
+
+#viewBtn:active::before {
+  scale: 0.7;
+}
+
+li {
+    background : transparent;
+    display : flex;
+}
+
+.black{
+    width: 100vw;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.navbar{
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+ .hero-image{
+    background-image: url('../public/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+    
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: #fff;
+    text-align: center;
+    line-height: normal;
+}
+
+.hero-content h1{
+    font-size: 4vw;
+}
+
+.hero-content p{
+    font-size: large;
+}
+
+.courses{
+    padding: 40px;
+} 
+
+.courses h2{
+
+    color: #333;
+    font-size: xx-large;
+}
+
+.img-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.img-container img{
+    width: 21vw;
+    height: 25vh;
+    object-fit:cover;
+    border-radius: 15px;
+}
+
+.course-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 21vw;
+    height: 420px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: #333 1px solid;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.course-container h3{
+    color: #333;
+    font-size: large;
+}
+
+.course-container p{
+    color: #333;
+    font-size: small;
+}
+
+.course-container a{
+    color: rgb(158, 0, 0);
+    font-size: small;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.course-row{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap:20px;
+    overflow-x: scroll;
+    scrollbar-width: medium;
+    scroll-behavior: smooth;
+    scrollbar-color: #333 #f4f4f4;
+}
+
+.course-row::-webkit-scrollbar{
+    width: 10px;
+}
+
+.course-row::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+
+.course-row::-webkit-scrollbar-track{
+    background-color: #f4f4f4;
+}
+
+.campus{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campus h2{
+
+    color: #333;
+    font-size: xx-large;
+}
+
+.campus a{
+    color: rgb(158, 0, 0);
+    font-size: small;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-top: 10px;
+    text-align: end;
+    padding-top: 10px;
+}
+
+.campus-inf{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.infrastructure{
+    padding: 10px;
+    padding-top: 12px;
+}
+
+.infrastructure h2{
+
+    color: #333;
+    font-size: xx-large;
+}
+
+.infrastructure ul li:first-child::before {
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 35px;
+    background-image: url('../public/bookshelf.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -35px;
+  }
+
+    .infrastructure ul li:nth-child(2)::before {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 35px;
+        background-image: url('../public/settings.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: -35px;
+    }
+
+    .infrastructure ul li:nth-child(3)::before {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 35px;
+        background-image: url('../public/desk.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: -35px;
+    }
+
+    .infrastructure ul li:nth-child(4)::before {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 35px;
+        background-image: url('../public/bunk.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: -35px;
+    }
+
+    .infrastructure ul li:nth-child(5)::before {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 35px;
+        background-image: url('../public/field.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: -35px;
+    }
+
+    .infrastructure ul li:nth-child(6)::before {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 35px;
+        background-image: url('../public/bus.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: -35px;
+    }
+
+    .infrastructure ul li:nth-child(7)::before {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 35px;
+        background-image: url('../public/pills.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: -35px;
+    }
+
+    .infrastructure ul li:nth-child(8)::before {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 35px;
+        background-image: url('../public/restaurant.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: -35px;
+    }
+
+    .infrastructure ul li:nth-child(9)::before {
+        content: '';
+        display: inline-block;
+        height: 25px;
+        width: 35px;
+        background-image: url('../public/wifi.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: -35px;
+    }
+
+    .infrastructure ul {
+        color: #333;
+        font-size: large;
+    }
