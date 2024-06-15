@@ -26,9 +26,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #nav{
+    position : fixed;
     width : 100%;
     height : 50px;
-    background-color : #f4f4f4;
+    background-color : #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 29%, #FFCC70 100%);
     justify-content : space-between;
     text-align : center;
 }
@@ -101,7 +103,8 @@ h1, h2, h3, h4, h5, h6{
 
 
 .btn:hover {
-  background: transparent;
+  background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 29%, #FFCC70 100%);
   color: white;
   font-size: 1.3em;
 }
