@@ -571,7 +571,6 @@ a{
  margin: auto;
   width: 25vw;
   height: 300px;
-  background-color: pink;
   margin-bottom: 200px;
   border-radius: 30px;
   position: relative;
@@ -611,18 +610,21 @@ a{
 
 #imageContainer > div:nth-child(1){
   background-image : url("https://avatars.githubusercontent.com/u/152053523?v=4");
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
+  border-radius : 20px;
     background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  text-align : center;
 }
 
 #imageContainer > div:nth-child(2){
   background-image : url("https://static.vecteezy.com/system/resources/thumbnails/000/550/535/small/user_icon_007.jpg");
-  width: 100%;
-  height: 100%;
-  display: none;
+  width: 200px;
+  height: 200px;
+  border-radius : 20px;
+  display : none;
     background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -630,9 +632,10 @@ a{
 
 #imageContainer > div:nth-child(3){
     background-image : url("https://avatars.githubusercontent.com/u/152053523?v=4");
-width: 100%;
-  height: 100%;
-  display: none;
+ width: 200px;
+  height: 200px;
+  border-radius : 20px;
+  display : none;
     background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
