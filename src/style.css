@@ -587,19 +587,22 @@ a{
 }
 
 #container .card{
+  align-items : center;
   position : relative;
-  max-width : 300px;
+  width:280px;
   height : 220px;
   background-color : #fff;
   display : flex;
   margin : 30px 10px;
   padding : 20px 15px;
   flex-direction : column;
-  transition : 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 #container .card:hover{
-  width : 430px;
+  height : 300px;
+  justify-content : center;
+  z-index:1;
 }
  
  #container .card .images{
@@ -632,4 +635,8 @@ a{
   opacity : 1;
   margin-top : -40px;
   transition-delay : 0.3s;
+}
+
+#container .card .content h1{
+  color : black;
 }
