@@ -328,7 +328,7 @@ a{
 .infrastructure{
     padding: 10px;
     padding-top: 12px;
-    margin-bottom : 100px;
+    margin-bottom : 50px;
 }
 
 .infrastructure h2{
@@ -583,7 +583,7 @@ a{
   justify-content : center;
   align-items : center;
   display : flex;
-  margin-bottom : 50px;
+  margin-bottom : 150px;
 }
 
 #container .card{
@@ -650,7 +650,7 @@ a{
   display : flex;
   justify-content:center;
   gap:10px;
-  margin-bottom:150px;
+  margin-bottom:100px;
 }
 
 #sub-images img{
