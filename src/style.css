@@ -328,7 +328,7 @@ a{
 .infrastructure{
     padding: 10px;
     padding-top: 12px;
-    margin-bottom : 180px;
+    margin-bottom : 100px;
 }
 
 .infrastructure h2{
@@ -583,7 +583,7 @@ a{
   justify-content : center;
   align-items : center;
   display : flex;
-  margin-bottom : 200px;
+  margin-bottom : 50px;
 }
 
 #container .card{
@@ -640,4 +640,35 @@ a{
 
 #container .card .content h1{
   color : black;
+}
+
+#sub-images{
+  text-align: center;
+  align-items:center;
+  width : 70%;
+  height: 300px;
+  display : flex;
+  justify-content:center;
+  gap:10px;
+  margin-bottom:150px;
+}
+
+#sub-images img{
+  width : 20%;
+  height : 100%;
+  object-fit:cover;
+  border-radius:10px;
+  border : 2px solid white;
+  transition : all ease-in-out 0.5s;
+}
+
+#sub-images img:hover{
+  width : 35%
+}
+
+#sub-imagesHeading{
+  font-size:40px;
+   font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #111;
 }
