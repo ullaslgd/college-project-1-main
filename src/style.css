@@ -181,7 +181,7 @@ li {
 .black{
     width: 100vw;
     background-color: black;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .navbar{
@@ -277,7 +277,6 @@ a{
 
 .course-row{
     display: flex;
-    flex-direction: row;
     justify-content: start;
     align-items: center;
     gap:20px;
@@ -287,19 +286,6 @@ a{
     scrollbar-color: #333 #f4f4f4;
 }
 
-@media (min-width:320px) and (max-width:480px){
-    .course-row{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        gap:20px;
-        overflow-x: scroll;
-        scrollbar-width: medium;
-        scroll-behavior: smooth;
-        scrollbar-color: #333 #f4f4f4;
-    }
-}
 .course-row::-webkit-scrollbar{
     width: 10px;
 }
@@ -610,7 +596,7 @@ a{
   margin : 30px 10px;
   padding : 20px 15px;
   flex-direction : column;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
   border-radius : 5px;
 }
 
@@ -642,14 +628,14 @@ a{
   color : #111;
   visibility : hidden;
   opacity : 0;
-  transition : 0.3s ease-in-out;
+  transition : 0.5s ease-in-out;
 }
 
 #container .card:hover .content{
   visibility : visible;
   opacity : 1;
   margin-top : -40px;
-  transition-delay : 0.3s;
+  transition-delay : 0.5s;
 }
 
 #container .card .content h1{
@@ -701,5 +687,3 @@ a{
   color : #333;
   text-decoration: underline;
 }
-
- 
