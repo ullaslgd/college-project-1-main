@@ -672,3 +672,18 @@ a{
     font-weight: 700;
     color: #111;
 }
+
+.menu1{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  gap: 40px;
+  font-size: larger;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.menu1 li:hover{
+  color : #333;
+  text-decoration: underline;
+}
