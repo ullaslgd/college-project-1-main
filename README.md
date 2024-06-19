@@ -2,10 +2,10 @@
 This repository contains the project for the 4th semester college institution website developed using pure HTML, CSS, and JavaScript.
 
  ## Team Members:
-@ullaslgd
-Keerthan S
+ullas,
+Keerthan S,
 S M Sagar
-## bOverview:
+## overview:
 This project aims to create a comprehensive website for our college institution, showcasing various aspects such as courses offered, faculty information, student resources, and upcoming events. The website is designed to be informative, user-friendly, and responsive across different devices.
 
 ## Technologies Used:
