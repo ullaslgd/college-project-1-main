@@ -571,13 +571,13 @@ a{
 
 #slidingImages{
   display:flex;
-  justify-content:center;
+  justify-content:space-between;
   align-items:center;
 }
 
 #container{
   position : relative;
-  width : 1200px;
+  width : 1600px;
   flex-wrap : wrap;
   padding : 30px;
   justify-content : center;
