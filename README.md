@@ -4,7 +4,7 @@ This repository contains the project for the 4th semester college institution we
  ## Team Members:
 ullas,
 Keerthan S,
-S M Sagar
+S M Sagar.
 ## overview:
 This project aims to create a comprehensive website for our college institution, showcasing various aspects such as courses offered, faculty information, student resources, and upcoming events. The website is designed to be informative, user-friendly, and responsive across different devices.
 
